@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "command": "pnpm vavite-loader vite dev",
+            "name": "Launch SvelteKit server",
+            "request": "launch",
+            "type": "node-terminal"
+        }
+    ]
+}
