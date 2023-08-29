@@ -61,6 +61,8 @@ async function callChatGpt(userInput: string): Promise<string> {
 client.on("messageCreate", async function(message) {
   console.log("Got message");
   if (message.author.bot) return;
+  const channels = ["instadads"];
+  if (!channels.includes(message.channel.name)) return;
   // if (!message.content.startsWith(prefix)) return;
 
   const commandBody = message.content.slice(prefix.length);
